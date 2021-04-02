@@ -1,0 +1,42 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.mycontainer {
+  display: flex;
+}
+
+.container1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.container2 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+@media screen and (max-width: 576px) {
+  .mycontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .container1 {
+    min-height: 50vh;
+  }
+  .container2 {
+    min-height: 40vh;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+

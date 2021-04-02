@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "angq19"
+  "defaultProject": "angq19",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,29 @@
+<div class="mycontainer">
+  <div class="container1">
+    <form #postForm="ngForm" (ngSubmit)="onSubmit(postForm.value);postForm.reset()">
+      <h2>Input A Message</h2>
+      <input 
+        type="text" 
+        name="inputData" 
+        id="data"
+        style="margin-top: 10px;"
+        class="form-control"
+        [(ngModel)] = "inputData"
+      >
+      <button
+        class="btn btn-primary"
+        style="margin-top: 20px;margin-bottom: 20px;"
+      >
+        send
+      </button>
+      <p>{{message}}</p>
+    </form>
+  </div>
+  <div class="container2">
+    <app-data 
+      [indata]="data" 
+      (liked)="onLiked($event)"
+    >
+    </app-data>
+  </div>
+</div>
