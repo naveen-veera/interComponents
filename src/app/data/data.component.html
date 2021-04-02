@@ -1,17 +1,10 @@
 <div class="mycontainer">
-  <p>The Message is {{inputData}}</p>
+  <p *ngIf="inputData" id="result">The Message is {{inputData}}</p>
   <div class="inner-container">
-    <button 
-      (click)="like(true)" 
-      class="btn btn-success" 
-    >
+    <button (click)="like(true)" id="like" class="btn btn-success">
       Like
     </button>
-    <button 
-      (click)="like(false)" 
-      class="btn btn-danger" 
-      style="margin-left:30px"
-    >
+    <button (click)="like(false)" id="disLike" class="btn btn-danger" style="margin-left:30px">
       Dislike
     </button>
   </div>
